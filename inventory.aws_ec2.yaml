@@ -16,3 +16,7 @@ keyed_groups:
 
   # ansible-inventory  -i inventory.aws_ec2.yaml --graph
   # run above command to get server private ips dynamically based on filters.
+
+  # Even though your AWS EC2 tag is roboshop-frontend (with a hyphen),
+  # Ansible's dynamic inventory automatically replaces hyphens with
+  # underscores (roboshop_frontend) because hyphens are invalid in Ansible group names.
