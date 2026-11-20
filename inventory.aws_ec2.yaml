@@ -1,7 +1,7 @@
 plugin: amazon.aws.aws_ec2
 
 regions:
- - us-east-1
+  - us-east-1
 
 filters:
   instance-state-name: running
@@ -10,11 +10,9 @@ filters:
 hostnames:
   - private-ip-address
 
-
 keyed_groups:
   - key: tags.Name
     separator: ''
-
 
   # ansible-inventory  -i inventory.aws_ec2.yaml --graph
   # run above command to get server private ips dynamically based on filters.
