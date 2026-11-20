@@ -2,4 +2,8 @@
   hosts: roboshop_frontend
   tasks:
      - name: ping
-       ping:
+       ansible.builtin.ping:
+     - name: install nginx
+       ansible.builtin.package:
+           name: nginx
+           state: present
