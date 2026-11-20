@@ -9,3 +9,10 @@ filters:
 
 hostnames:
   - private-ip-address
+
+
+
+
+
+  # ansible-inventory  -i inventory.aws_ec2.yaml --graph
+  # run above command to get server private ips dynamically based on filters.
